@@ -38,6 +38,8 @@ function tsp_ls(distance_matrix) {
     //Look at the distance of the recent random route
     let bestRouteDistance = calculateDistance(route, distance_matrix);
     //Unitl we have reached the stopping criteria, keep finding the best route
+    //I chose factorial, since although this is random, thsi would be the amount if we 
+    //found all permutations
     let stoppingCriteria = findFactorial(numOfCities);
     let counter = 0;
 
