@@ -46,6 +46,7 @@ returns the length of the shortest tour (not the tour itself).
 Test your new function; I've provided some basic testing code in `code.test.js`.
 
  I asked question in office hours, impromptu hours. I referenced https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html which I learned and used the Fisher Yates algorithm, I also looked at this website for randomization as well, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random. I also referenced my old TSP Held Karp and pancake sort and dynamic euler.
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
 ## Runtime Analysis
 
