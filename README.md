@@ -52,3 +52,5 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+For the worst case time complexity, overall, for most of these loops they have a runtime of O(v) or they have a runtime of a maximum of O(v^2), however, one major factor is conquering these times. This would be the stopping criteria, which stops after v! iterations. This leads to the actual worst case time complexity being O(v!). For memory complexity, although we use some temporary arrays which are O(v), we will only have a space complexity of about O(v^2); this O(v^2) comes from the distance_matrix.
