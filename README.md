@@ -45,8 +45,13 @@ returns the length of the shortest tour (not the tour itself).
 
 Test your new function; I've provided some basic testing code in `code.test.js`.
 
+ I asked question in office hours, impromptu hours. I referenced https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html which I learned and used the Fisher Yates algorithm, I also looked at this website for randomization as well, https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random. I also referenced my old TSP Held Karp and pancake sort and dynamic euler.
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
 ## Runtime Analysis
 
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+For the worst case time complexity, we start at the top which pushing to the route array will give us O(v), the array that checks if we have a zero matrix will be O(v^2), and the for loop that is the Fisher yates Algorithm will also be O(v), and finally (before moving to the iterations) the bestRouteDistance variable will call calculateDistance, which will take O(v). Now onto the iterations, for stopping criteria (how long the while loop will run), we have O(v^2). In each iteration of this, we find the i and k values, next we will call twoOptSwap which will swap our list from our i and k values, which takes O(v), after we will check the distance this new route that has been made is. Once we calculate the distance which is O(v), we will check if the new distance is less than the best route so far. Overall, the worst case time complexity will end up being O(v^2 * v) or O(v^3) since for every iteration, we have operations in these. This is much better than the help karp algorithm, however we are not guaranteed to find the best path with randomness. For memory complexity, this will only be O(v) since arrays like route, bestRoute, and other temp array will only take O(v).
